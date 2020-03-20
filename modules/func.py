@@ -17,8 +17,8 @@ def wfCalc(inpt):        ## Task 2 check digit verification using weighted array
     
     remainder = sum(wSum) % 12
 
-    if remainder in {10,12}:
-        return False
+#   if remainder in {10,12}: ## [EDIT] Obsolete condition statement as met on line 23
+#       return False
     
     if remainder == int(inpt[9]) or (remainder == 11 and int(inpt[9]) == 0):
         return True
