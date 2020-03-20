@@ -19,15 +19,15 @@ def main():
             array = [string] # else string becomes list for loop
 
 
-        for id in range(len(array)): ## indexing loop for array
+        for id in array:              ##[EDIT] why loop the index and not just id???
 
             ## Task 1 Check
-            if not (len(array[id]) == 10 and array[id].isdigit() and not func.identDig(array[id])):
+            if not (len(id) == 10 and id.isdigit() and not func.identDig(id)): #[EDIT] Condition statement for loop change
                 invalid += 1
                 continue           
 
             # Task 2 Check
-            if func.wfCalc(array[id]):
+            if func.wfCalc(id): #[EDIT] Condition statement for loop change        
                 valid += 1
             else:
                 invalid += 1
