@@ -16,6 +16,7 @@ def wfCalc(inpt):        ## Task 2 check digit verification using weighted array
         wSum.append(int(inpt[i]) * wFactor[i])
     
     remainder = sum(wSum) % 12
+    remainder = 12 - remainder ## previously removed line oops
 
 #   if remainder in {10,12}: ## [EDIT] Obsolete condition statement as met on line 23
 #       return False
